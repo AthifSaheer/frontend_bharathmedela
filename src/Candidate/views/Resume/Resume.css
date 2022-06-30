@@ -1,0 +1,45 @@
+.resume-main-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0 20px 0px;
+}
+.text-algn-centr {
+    text-align: center;
+    padding: 20px;
+}
+.rlmd-details-div-1 {
+    width: 30%;
+    background: rgb(255, 255, 255);
+}
+.rlmd-details-div {
+    text-align: left;
+    background: #ffffff;
+    padding: 30px;
+    width: 40%;
+    border-radius: 3%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.rlmd-details-div p {
+    font-size: 20px;
+    padding: 2px;
+    color: #313131ee;
+}
+.rlmd-details-div p strong {
+    font-size: 24px;
+    color: #000000ee;
+}
+.rcrud-button {
+    color: skyblue;
+    background-color: white;
+    border: 1px solid skyblue;
+    width: 30%;
+    font-size: 24px;
+    padding: 13px;
+    height: 50px;
+}
+.rcrud-button:hover {
+    color: white;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}

@@ -1,0 +1,88 @@
+.NewTest__ {
+  .MuiInput-underline:after {
+    border-bottom: 2px solid #32be8f !important;
+  }
+  .MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
+    border-color: #32be8f;
+  }
+  .MuiButton-containedPrimary {
+    background-image: linear-gradient(
+      to right,
+      #32be8f,
+      #38d39f,
+      #32be8f
+    ) !important;
+    background-size: 200%;
+    transition: 0.5s;
+    &:hover {
+      background-position: right;
+    }
+  }
+  .tick {
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+      0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: #32be8f !important;
+  }
+  .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    color: rgba(0, 0, 0, 0.04) !important;
+  }
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #32be8f !important;
+  }
+  .formNewTest {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .formNewTestMainDiv {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+  .questionNewTest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .ownQuestions,
+  .systemQuestions,
+  .codingQuestions,
+  .dateTimeSelector,
+  .submitButton {
+    margin-top: 20px !important;
+  }
+  .addNewQuestionButton {
+    margin-bottom: 20px !important;
+  }
+  .dateTimeSelector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .closeTime {
+    padding-left: 10px;
+  }
+  .submitButton {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    border-radius: 25px;
+    height: 50px;
+  }
+  #error {
+    color: #ff0033;
+    font-weight: 500;
+    transition: 300ms;
+    text-align: center;
+  }
+  #success {
+    color: #5cb85c;
+    font-weight: 500;
+    transition: 300ms;
+    text-align: center;
+  }
+}

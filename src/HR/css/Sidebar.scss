@@ -1,0 +1,31 @@
+.Sidebar__,
+.MuiDrawer-modal {
+  .MuiAppBar-colorPrimary {
+    background-image: linear-gradient(
+      to right,
+      #32be8f,
+      #38d39f,
+      #32be8f
+    ) !important;
+    background-color: #32be8f !important;
+  }
+  .navList {
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+}
+#navbar__emailDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  word-break: break-word;
+  padding: 0px 10px;
+  text-align: center;
+  img {
+    width: 100px !important;
+  }
+}

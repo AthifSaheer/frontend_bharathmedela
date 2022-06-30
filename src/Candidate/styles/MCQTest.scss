@@ -1,0 +1,314 @@
+.__MCQTest {
+  margin-left: 94px;
+  font-family: "Muli", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  .error {
+    color: #f44336;
+    font-size: 0.8rem;
+    margin: 0.5rem 0rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      img {
+        width: 25rem;
+      }
+    }
+
+    .login-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+
+      .btn.hide {
+        opacity: 0.5!important;
+        pointer-events: none!important;
+      }
+      .msg{
+        margin: .5rem 0rem;
+        color: #e57373;
+      }
+
+      .form {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .formControl {
+          margin: 0.7rem 0rem;
+          font-family: "Poppins", sans-serif !important;
+          label {
+            color: #999;
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.3s;
+          }
+          fieldset {
+            border: none !important;
+            border-bottom: 2px solid #d9d9d9 !important;
+          }
+          .css-1v4ccyo.Mui-focused .MuiOutlinedInput-notchedOutline {
+            border-color: #38d39f !important;
+          }
+        }
+      }
+      .title {
+        margin: 15px 0;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 2.9rem;
+        text-align: center;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: #38d39f;
+    }
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-position: right;
+    }
+  }
+  .startQuiz {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    .heading {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      font-size: 1.5rem;
+      color: #333;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+    }
+    .timer {
+      .left {
+      }
+    }
+    .btn {
+      width: 50% !important;
+    }
+    .questionWrapper {
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .questionTab {
+        width: 80%;
+        margin: 1rem 0;
+        .optionsTab {
+          .question {
+            font-weight: 700 !important;
+            font-size: 1rem !important;
+            line-height: 2.4375em !important;
+            transition: 300ms;
+            &.Mui-focused {
+              color: #38d39f !important;
+              transition: 300ms;
+            }
+          }
+          .radioGroup {
+            transition: 300ms;
+            .css-1a5icme.Mui-checked {
+              color: #38d39f !important;
+              transition: 300ms;
+            }
+            .MuiFormControlLabel-label {
+              font-family: "Muli", sans-serif !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .resultTab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    .heading {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      font-size: 1.5rem;
+      color: #333;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .left {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      table {
+        width: 80%;
+        th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 0.5rem;
+        }
+        td {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 0.5rem;
+          &.correct {
+            background-color: #81c784;
+          }
+          &.wrong {
+            background-color: #e57373;
+          }
+          &.no {
+            background-color: #f3e5f5;
+          }
+        }
+      }
+    }
+    .right {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      span {
+        width: 100%;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: 0.7rem 0rem;
+        span {
+          color: #5447c8;
+        }
+      }
+      .btn {
+        width: 70%;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    flex-direction: column !important;
+    margin-left: 68px !important;
+    .wave {
+      display: none;
+    }
+    .container {
+      .img {
+        display: none;
+      }
+      .login-content {
+        width: 100%;
+        .form {
+          width: 80%;
+          .formControl {
+          }
+        }
+        .title {
+          font-size: 2rem;
+        }
+      }
+    }
+    .startQuiz {
+      padding: 2rem 0.5rem;
+      .btn {
+        width: 100%;
+      }
+      .questionWrapper .questionTab .optionsTab .question {
+        line-height: initial !important;
+        margin-bottom: 0.5rem;
+      }
+      .MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd {
+        align-items: flex-start !important;
+        margin-bottom: 0.2rem !important;
+      }
+      .MuiRadio-root.MuiRadio-colorPrimary.MuiButtonBase-root.MuiRadio-root.MuiRadio-colorPrimary.PrivateSwitchBase-root {
+        padding: 0 9px 9px 9px !important;
+      }
+    }
+    .resultTab {
+      padding: 2rem 0.5rem;
+      .left {
+        width: 100%;
+      }
+      .right {
+        margin-top: 1rem;
+        width: 100%;
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

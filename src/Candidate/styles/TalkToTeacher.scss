@@ -1,0 +1,55 @@
+.__TalkToTeacher {
+  margin-left: 94px;
+  font-family: "Muli", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    .btn {
+      display: block;
+      width: 100%;
+      height: 50px;
+      border-radius: 25px;
+      outline: none;
+      border: none;
+      background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+      background-size: 200%;
+      font-size: 1.2rem;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      margin: 1rem 0;
+      cursor: pointer;
+      transition: 0.5s;
+      &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      &:hover {
+        background-position: right;
+      }
+    }
+    .msg {
+      margin-top: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .options {
+      width: 80%;
+      .msg {
+        color: #38d39f;
+      }
+    }
+  }
+}

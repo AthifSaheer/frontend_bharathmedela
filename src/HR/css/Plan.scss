@@ -1,0 +1,112 @@
+.Plan__ {
+  /* Hover Effect*/
+  /** Media query for responsiveness */
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    h1 {
+      font-family: "raleway";
+      color: #6c63ff;
+      font-size: 3.5rem;
+    }
+    p {
+      font-family: "raleway";
+      color: #666;
+      font-size: 16px;
+      padding: 5px;
+    }
+  }
+  .plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .planbox {
+    width: 300px;
+    height: 450px;
+    padding: 25px 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background: linear-gradient(#6c63ff 0%, #6c63ff 100%);
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.8s;
+    &:hover {
+      background: linear-gradient(#2cce95 100%, #6c63ff 0%);
+      transform: scale(1.1);
+      .content {
+        button {
+          background: transparent;
+          border: 2px solid #fff;
+          color: #fff;
+        }
+      }
+      .icon {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .icon {
+      height: 150px;
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+      img {
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
+      }
+    }
+  }
+  .title {
+    text-align: center;
+    color: #fff;
+    font-family: "Century Gothic";
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .price {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "arial";
+    text-align: center;
+    padding: 10px;
+    span {
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .content {
+    p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 22px;
+      color: #f2f2f2;
+      font-family: "raleway";
+    }
+    button {
+      color: blue;
+      width: 180px;
+      line-height: 50px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 25px;
+      background: #f2f2f2;
+      border: 0;
+      margin: 25px 0;
+      cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .plans {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}
